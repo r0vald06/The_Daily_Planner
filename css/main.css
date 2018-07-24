@@ -6,13 +6,14 @@
   justify-content: space-around;
   border-style: solid;
   border-width: 2px;
-  border-color: black;
-  background-color:rgba(255,255,255, 0.9);;
+  border-color: rgba(0, 0, 0, .5);
+  background-color:rgba(255,255,255, 0.5);
   width: 45%;
   height: 600px;
   border-radius: 20px; 
   z-index: 1;
   overflow-y: auto;
+  margin: 0 auto;
 }
 
 .imgCube {
@@ -23,7 +24,7 @@
   background-position: 50% 50%;
   background-repeat:   no-repeat;
   background-size:     cover; 
-  border: 5px solid rgba(255, 255, 255, 0.9);
+  border: 5px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
 }
 
@@ -31,4 +32,38 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+.chooseBg {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button {
+  display: inline-block;
+  padding: 3px 13px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(128, 128, 128, 0.5);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+.button:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  color: black;
+}
+
+#search {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, .5);
 }
