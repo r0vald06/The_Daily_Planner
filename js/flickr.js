@@ -21,7 +21,7 @@ $(document).ready(function() { // waits for the javascript to load first
        var photoHTML = '';
        if (data.items.length > 0) {
          $.each(data.items,function(i,photo) {
-          //  photoHTML += '<div>';
+           photoHTML += '<div>';
            photoHTML += '<a href="' + photo.link + '" class="image">';
            photoHTML += '<img class="imgCube"src="' + photo.media.m + '"></a></div>';
          }); // end each
