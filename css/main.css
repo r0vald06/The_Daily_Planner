@@ -85,7 +85,7 @@
 #greeting {
   font-size: 3em;
   color: rgb(255, 255, 255);
-  margin-top: -1em; 
+  margin-top: -1em;
 }
 
 .clockContainer {
@@ -96,4 +96,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.nameField {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
 }
