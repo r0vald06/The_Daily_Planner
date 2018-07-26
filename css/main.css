@@ -43,7 +43,9 @@
 }
 
 .chooseBg {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  background-color: rgb(128, 128, 128, 0.8);
 }
 
 .button {
@@ -104,3 +106,63 @@
   background: transparent;
   border-bottom: 1px solid black;
 }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;  
+}
+.navList {
+  background-color:rgba(255, 255, 255, .5); 
+}
+
+a {
+  display: block;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.form {
+  float: right
+}
+
+#message:hover {
+  background-color: #111;
+}
+
+#background:hover {
+  background-color: #111;
+}
+
+#tasks:hover {
+  background-color: #111;
+}
+
+#about:hover {
+  background-color: #111;
+}
+
+/*////// Media Query ///////*/
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  #clock {
+    font-size: 3em;
+  }
+
+  #greeting{
+    font-size: 2em;
+  }
+}
+

@@ -11,7 +11,7 @@ $(document).ready(function() { // waits for the javascript to load first
      $searchField.prop("disabled",true); //checking to see if the user as searched anything
      $submitButton.attr("disabled", true).val("searching...."); //updating serch button text
      
-     $('#photos').attr("class","imgContainer")
+     $('#photos').attr("class","imgContainer");
      var search = $searchField.val();
     // $('#photos').html('');
      $.getJSON(flickerAPI, {
@@ -25,7 +25,6 @@ $(document).ready(function() { // waits for the javascript to load first
            counter += 1;
            photoHTML += '<img class="imgCube"src="' + photo.media.m + '"></a>';
            var id = '#flickr' + counter.toString();
-           console.log(id);
            $(id).html(photoHTML);
          }); // end each
        } else {
