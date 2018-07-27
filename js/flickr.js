@@ -3,8 +3,12 @@ $(document).ready(function() { // waits for the javascript to load first
   var counter = 0;
 
   $('form').submit(function (event) {
+    document.getElementById("photos").style.display = '';
+    document.getElementById("clockContainer").style.display = 'none';
+
      var $submitButton = $('#submit'); //when the user hits enter rather hitting search button
      var $searchField = $('#search');
+
      
      event.preventDefault(); //stops the page from refreshing itself
      
@@ -13,12 +17,12 @@ $(document).ready(function() { // waits for the javascript to load first
      
      $('#photos').attr("class","imgContainer");
      var search = $searchField.val();
-    // $('#photos').html('');
+
      $.getJSON(flickerAPI, {
          tags: search,
          format: "json"
        },
-     function(data){       
+     function(data){     
        if (data.items.length > 0) {
          $.each(data.items,function(i,photo) {
            var photoHTML = '';
@@ -31,6 +35,7 @@ $(document).ready(function() { // waits for the javascript to load first
          photoHTML = "<p>No photos found that match: " + animal + ".</p>"
        }
        
+       counter = 0;
        $searchField.prop("disabled", false);
        $submitButton.attr("disabled", false).val("Search");
      }); // end getJSON
