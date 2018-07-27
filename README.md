@@ -1,3 +1,4 @@
+**ATTENTION: please run on your local enviroment from the text editor to see full website functionalities. Github pages does not allow API Calls**
 # Welcome To The Daily Planner!
 
 Hi! This website was created to serve as an online planner that allows the user to customize by clicking a button on the navigation bar.
