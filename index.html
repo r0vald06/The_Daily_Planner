@@ -8,29 +8,93 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="js/flickr.js"></script>
+  <script src="js/setBackground.js"></script>
   <script src="js/clock.js"></script>
+  <script src="js/navBar.js"></script> 
 </head>
 <body background="./imgs/lake.jpg" class="body">
-  <form>
+  <ul class="nav">
+      <li class="navList"><a id="message">Message</a></li>
+      <li class="navList"><a id="tasks">Tasks</a></li>
+      <li class="navList"><a id="background">Background</a></li>
+      <li class="navList"><a id="about">About</a></li>
+    </ul>
+  <form class="form" id="form">
     <label class="chooseBg" for="search">Choose Your Background</label>
     <input type="search" name="search" id="search">
     <button class="button" id="submit">Search</button>
     <!-- <input type="submit" value="Search" id="submit"> -->
   </form>            
   <div id="photos">
+    <div class="image" id="flickr1">
 
+    </div>
+    <div class="image" id="flickr2">
+
+    </div>
+    <div class="image" id="flickr3">
+
+    </div>
+    <div class="image" id="flickr4">
+  
+    </div>
+    <div class="image" id="flickr5">
+
+    </div>
+    <div class="image" id="flickr6">
+  
+    </div>
+    <div class="image" id="flickr7">
+
+    </div>
+    <div class="image" id="flickr8">
+    
+    </div>
+    <div class="image" id="flickr9">
+
+    </div>
+    <div class="image" id="flickr10">
+      
+    </div>
+    <div class="image" id="flickr11">
+
+    </div>
+    <div class="image" id="flickr12">
+        
+    </div>
+    <div class="image" id="flickr13">
+
+    </div>
+    <div class="image" id="flickr14">
+  
+    </div>
+    <div class="image" id="flickr15">
+
+    </div>
+    <div class="image" id="flickr16">
+    
+    </div>
+    <div class="image" id="flickr17">
+
+    </div>
+    <div class="image" id="flickr18">
+      
+    </div>
+    <div class="image" id="flickr19">
+
+    </div>
+    <div class="image" id="flickr20">
+        
+    </div>
   </div>
   <div class="clockContainer" id="clockContainer">
     <!-- <div class="insideClockCont" > -->
       <h1 class="clock" id="clock">
 
       </h1>
-    <!-- </div> -->
-    <!-- <div class="insideClockCont"> -->
       <h2 class="greeting" id="greeting">
         Hey there, lets get the day started!
-      <h2> 
-    <!-- </div> -->
-    <script src="./js/javascript.js"></script>
+      </h2> 
+    </div>
 </body>
 </html>
