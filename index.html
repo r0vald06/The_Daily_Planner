@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- referecing all of my scripts -->
   <meta charset="utf-8">
   <title>The Daily Planner</title>
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <link rel="title icon" href="./imgs/redBlueCalendar.ico" />
   <link rel="stylesheet" href="css/main.css">
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="js/flickr.js"></script>
   <script src="js/setBackground.js"></script>
   <script src="js/clock.js"></script>
@@ -23,10 +24,10 @@
     <label class="chooseBg" for="search">Choose Your Background</label>
     <input type="search" name="search" id="search">
     <button class="button" id="submit">Search</button>
-    <!-- <input type="submit" value="Search" id="submit"> -->
   </form>            
+  <!-- In here all of the photos get displayed with use of .html() and flickr api -->
   <div id="photos">
-    <div class="image" id="flickr1">
+    <div class="image" id="flickr1"> 
 
     </div>
     <div class="image" id="flickr2">
@@ -96,5 +97,10 @@
         Hey there, lets get the day started!
       </h2> 
     </div>
+
+    <div class= "modal">
+
+    </div>
+
 </body>
 </html>
